@@ -44,4 +44,11 @@ public class Carro {
     public void setMontadora(Montadora montadora) {
         this.montadora = montadora;
     }
+
+    public CarroStauts darIngnicao(Chave chave) {
+        if (chave.getMontadora() != this.montadora) {
+            return new CarroStauts("Chave errada.");
+        }
+        return new CarroStauts("Chave certa, carro ligando com motor " + motor);
+    }
 }

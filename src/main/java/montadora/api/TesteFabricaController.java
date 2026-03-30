@@ -1,0 +1,21 @@
+package montadora.api;
+
+
+import montadora.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TesteFabricaController {
+
+    @Autowired
+    private Motor motor;
+
+    @PostMapping
+    public CarroStauts LigarCarro(@RequestBody Chave chave) {
+        var carro = new HondaHRV(motor);
+        return carro.darIngnicao(chave);
+    }
+}
