@@ -1,7 +1,7 @@
-package montadora.configuration;
+package io.github.modelocontexto.modelocontextoapi.montadora.configuration;
 
-import montadora.Motor;
-import montadora.TipoMotor;
+import io.github.modelocontexto.modelocontextoapi.montadora.Motor;
+import io.github.modelocontexto.modelocontextoapi.montadora.TipoMotor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

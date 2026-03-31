@@ -1,4 +1,4 @@
-package montadora;
+package io.github.modelocontexto.modelocontextoapi.montadora;
 
 import java.awt.*;
 
