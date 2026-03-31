@@ -1,3 +1,9 @@
 spring:
-  application:
-    name: modelocontextoapi
+  datasource:
+    url: jdbc:postgresql://localhost:5432/contexoAPI
+    username: postgres
+    password: saulo123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
