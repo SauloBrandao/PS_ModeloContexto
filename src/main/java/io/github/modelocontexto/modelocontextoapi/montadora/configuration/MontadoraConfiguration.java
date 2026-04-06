@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Primary;
 public class MontadoraConfiguration {
 
     @Bean(name = "motorAspirado")
-    @Primary // -> definindo esse Bean como Primario para o controller
+    // @Primary // -> definindo esse Bean como Primario para o controller
     public Motor motorAspirado() {
         var motor = new Motor();
         motor.setPotencia(120);
