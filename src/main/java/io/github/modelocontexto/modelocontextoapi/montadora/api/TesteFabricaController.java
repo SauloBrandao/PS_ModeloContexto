@@ -1,6 +1,5 @@
 package io.github.modelocontexto.modelocontextoapi.montadora.api;
 
-
 import io.github.modelocontexto.modelocontextoapi.montadora.CarroStauts;
 import io.github.modelocontexto.modelocontextoapi.montadora.Chave;
 import io.github.modelocontexto.modelocontextoapi.montadora.HondaHRV;
@@ -17,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TesteFabricaController {
 
     @Autowired
-    // @Qualifier("motorEletrico")
+    @Qualifier("motorEletrico")
     private Motor motor;
 
     @PostMapping
